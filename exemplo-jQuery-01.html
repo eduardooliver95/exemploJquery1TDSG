@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-widht,intial-scale=1.0"/>
+    <title>exemplo jQuery</title>
+
+    <script type="text/javascript" src="assets/js/jquery-3.2.1.js">
+
+    </script>
+    <script type="text/javascript">
+      $(document).read(function functionName() {
+        alert('teste jQuery')
+      })
+    </script>
+
+    <script type="text/javascript"src="">
+
+    </script>
+  </head>
+  <body>
+    <script type="text/javascript">
+            var valorSelecionado;
+        var elemento = document.getElementsByTagName('input');
+        for(var n=0;n<elemento.length;n++){
+          if(elemento[n].type=='radio'&&
+          elemento[n].name=='tEsporte'&&
+          elemento[n].checked){
+          valorSelecionado=elemento[n].value;
+        }
+      }
+    </script>
+
+
+
+    <form action="#" method="get">
+      <fieldset>
+        <legend>Exemplo</legend>
+        <div>
+
+          <label for="">Fubebol</label>
+          <input type="radio" name="tEsporte" value="fut" id="iEsporteFut" checked="checked"/>
+        <label for="">volei</label>
+        <input type="radio" name="tEsporte" value="volei" id="iEsporteVolei"/>
+        <label for="">Basquete</label>
+        <input type="radio" name="tEsporte" value="basq" id="iEsporteBasq"/>
+        </div>
+      </fieldset>
+    </form>
+
+  </body>
+</html>
